@@ -1,0 +1,41 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+    <h1 class="mb-4">My Tasks</h1>
+
+    <div class="mb-3">
+        <a href="{% url 'task_create' %}" class="btn btn-primary">
+            <i class="bi bi-plus"></i> Add New Task
+        </a>
+    </div>
+
+    <div class="list-group">
+        {% for task in tasks %}
+            <a href="{% url 'task_detail' task.pk %}"
+               class="list-group-item list-group-item-action
+                      {{ task.get_priority_class }}
+                      {% if task.is_overdue %}overdue{% endif %}">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">
+                        {% if task.completed %}
+                            <s>{{ task.title }}</s>
+                        {% else %}
+                            {{ task.title }}
+                        {% endif %}
+                    </h5>
+                    <small>
+                        {% if task.is_overdue %}
+                            <span class="text-danger">Overdue</span>
+                        {% elif task.due_date %}
+                            Due: {{ task.due_date }}
+                        {% endif %}
+                    </small>
+                </div>
+                <p class="mb-1">{{ task.description|truncatechars:100 }}</p>
+                <small>Priority: {{ task.get_priority_display }}</small>
+            </a>
+        {% empty %}
+            <div class="alert alert-info">No tasks found. Create your first task!</div>
+        {% endfor %}
+    </div>
+{% endblock %}

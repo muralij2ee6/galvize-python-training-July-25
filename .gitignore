@@ -1,0 +1,30 @@
+.idea
+.vscode
+*.iml
+# Build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.log
+# OS generated files
+.DS_Store
+# Node.js dependencies
+node_modules/
+# Python dependencies
+__pycache__/
+*.pyc
+# Python virtual environments
+venv/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# Environment variables
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

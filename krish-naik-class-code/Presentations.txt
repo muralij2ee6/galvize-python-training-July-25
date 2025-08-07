@@ -1,0 +1,9 @@
+Week1 Project
+
+Two classes Contact for data ContactManager implementation of Class
+
+Contact Class has 
+update, validate methods
+
+ContactManager has
+add_contact, duplicate check, search contacts, edit contacts, delete contact, get_contact_by_category, export to file, save contacts, load contact, display_all_contacts

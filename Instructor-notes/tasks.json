@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Python project",
+        "completed": false,
+        "created_at": "2025-08-05T13:47:26.201977"
+    },
+    {
+        "id": 2,
+        "title": "Prepare for the meeting",
+        "completed": true,
+        "created_at": "2025-08-05T13:47:26.201983"
+    }
+]
