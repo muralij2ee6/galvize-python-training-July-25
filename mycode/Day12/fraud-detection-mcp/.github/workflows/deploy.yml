@@ -1,0 +1,23 @@
+name: Deploy Fraud Detection API
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker-compose build
+
+      - name: Run tests
+        run: |
+          docker-compose up -d
+          curl --retry 5 --retry-delay 10 http://localhost:8000/  # Health check
+
+      - name: Deploy to AWS/GCP (example)
+        if: success()
+        run: echo "Deploying to cloud..."

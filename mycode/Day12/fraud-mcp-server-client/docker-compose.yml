@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  fraud-api:
+    build: ./server
+    ports:
+      - "8000:8000"
+    environment:
+      - HF_MODEL=distilbert-base-uncased-finetuned-fraud
+      - XGBOOST_MODEL=/models/xgboost_fraud.json
+
+  graph-db:
+    image: neo4j:4.4
+    ports:
+      - "7474:7474"
+    volumes:
+      - ./data/graph_data:/data
+
+  monitoring:
+    image: jupyter/datascience-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./monitoring:/home/jovyan/work

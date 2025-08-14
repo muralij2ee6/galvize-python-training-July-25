@@ -28,3 +28,53 @@ venv/
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Node.js dependencies
+node_modules/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Environments
+.env
+.env.local
+.env.development
+.env.production
+
+# Build
+build/
+dist/
+*.egg-info/

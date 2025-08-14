@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  fraud-api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    environment:
+      - PROMETHEUS_METRICS_PORT=8001  # For monitoring
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - fraud-api
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
