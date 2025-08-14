@@ -1,0 +1,53 @@
+My two cents is that you need to build the foundations, first.
+
+So to begin, I'd probably start with reading:
+
+Larry Gonick, The Cartoon Guide to Statistics
+
+David Spiegelhalter, The Art of Statistics
+
+Timothy C. Urdan, Statistics in Plain English
+
+OpenIntro Statistics
+
+That'll give you some basics about what statistics can be. Then you need to develop your mathematics skills. For that I'd say to read:
+
+Ian Stewart, Concepts of Modern Mathematics
+
+Trevor Johnson & Hugh Neil, Mathematics: A Complete Introduction
+
+Silvanus Thompson & Martin Gardner, Calculus Made Easy
+
+Daniel Velleman, How to Prove It
+
+P.D. Magnus et al., for all x
+
+Tarski, Introduction to Logic and the Methodology of Deductive Sciences
+
+Gilbert Strang, Linear Algebra and Its Applications
+
+Steven Miller, The Probability Lifesaver Will Kurt, Bayesian Statistics the Fun Way
+
+Raffi Grinberg, The Real Analysis Lifesaver
+
+Then you can get more into statistics:
+
+Savage, The Foundations of Statistics
+
+George Box, Statistics for Experimenters
+
+Wackerly, Mendenhall, & Sheaffer, Mathematical Statistics with Applications
+
+Larry Wasserman, All of Statistics
+
+Larry Wasserman, All of Nonparametric Statistics
+
+George Castella & Roger Berger, Statistical Inference
+
+Kobayashi, Mark, & Turin, Probability, Random Processes, and Statistical Analysis
+
+Kenneth Burnham & David R Anderson, Model Selection and Multimodel Inference
+
+TR Jaynes, Probability Theory: The Logic of Science
+
+Ultimately, statistics is a large enterprise, no one book contains it all, and all the books I listed above doesn't encompass it either. But if you put your mind to it, build a strong foundation, you can keep learning and building and applying.
